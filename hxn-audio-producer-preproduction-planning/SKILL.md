@@ -1,6 +1,6 @@
 ---
 name: hxn-audio-producer-preproduction-planning
-description: 音频制作人前期筹备规划。用于有声书、多角色演播、多人CV协作、集数规划、阅读理解块、全书资料包、角色颜色与录制责任、分集文本、原文画本、录制执行稿、录制版画本、前情提要、试录校准、Markdown/Word画本模板等正式录制前的筹备工作。用户讨论接书后怎么组织制作、如何读长篇原文、如何沉淀资料包、如何切集、如何生成原文画本、录制执行稿或录制版画本时必须使用。
+description: 音频制作人前期筹备规划。用于有声书、多角色演播、多人CV协作、集数规划、阅读理解块、全书资料包、角色颜色与录制责任、分集文本、原文画本、录制执行稿、录制版画本、前情提要、试录校准、Markdown 画本模板等正式录制前的筹备工作。用户讨论接书后怎么组织制作、如何读长篇原文、如何沉淀资料包、如何切集、如何生成原文画本、录制执行稿或录制版画本时必须使用。
 version: 0.6.9
 ---
 
@@ -51,7 +51,7 @@ version: 0.6.9
 13. 单 CV 角色工作稿不是默认产物，只在复杂协作、补录、训练或录制方要求时派生。
 14. 当前阶段不处理 OCR、底层原文清洗或基础角色标注，除非用户明确要求审查前置文本整理流程、迁移相关规则或讨论两者边界。
 15. 不脑补原文、角色、剧情、平台要求或制作人意图。
-16. skill 运行时不依赖外部载体；规则、schema、prompt 和模板应以内置文件为准。
+16. skill 的内置规则、schema、prompt 和模板应以本 skill 的 Markdown 文件为准。
 
 ## 按任务读取 reference
 
@@ -65,9 +65,10 @@ version: 0.6.9
 
 ## 模板使用
 
+- 角色分析工作簿模板：`templates/role-analysis-workbook-template.md`。
 - 原文画本模板：`templates/original-huaben-master.md`。
 - 录制版画本 AI 可读样张：`templates/recording-huaben-sample.md`。
-- 录制版画本 Word/WPS 样张：`templates/recording-huaben-sample.docx`，仅供制作人 / 录制者下载查看排版效果，不作为 AI 执行规则来源。
+- 如用户需要指定格式的交付文件，按对应 Markdown 模板结构即时生成。
 
 ## 输出风格
 
